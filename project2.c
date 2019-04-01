@@ -5,8 +5,6 @@
 #define PARTI_SAYISI 5
 #define MAKSIMUM_OY_SAYISI 1499
 
-int i,j;
-
 struct partiler
 {
     char parti_isim[15];
@@ -21,6 +19,8 @@ struct secim
 {
     int toplamOySayisi;
 }secim2019;
+
+int i,j;
 
 void parti_isimleri()
 {
@@ -87,7 +87,6 @@ void secimSonuclariDokumu()
 
 void secimEkrani()
 {
-    int j;
     for(i=0; i<PARTI_SAYISI; i++)
     {
         parti[i].grafikselOran = parti[i].oy_yuzdesi * 2;
